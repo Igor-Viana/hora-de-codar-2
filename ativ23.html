@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e menor dos 20</title>
+</head>
+<body>
+    <script>
+
+        var maior = 0;
+        var menor = 0;
+
+        for (let contador = 0; contador < 20; contador++) {
+            var num = parseFloat(prompt("Digite um número: "));
+            if (num > maior) {
+                maior = num;
+            }; 
+            if (num < maior || num < menor){
+                menor = num;
+            };
+        };
+
+        alert("O menor número é: " + menor);
+        alert("O maior número é: " + maior);
+    </script>
+</body>
+</html>

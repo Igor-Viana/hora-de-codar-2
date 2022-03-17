@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poligonos</title>
+</head>
+<body>
+    <script>
+        var lados = parseInt(prompt("Digite o número de lados: "));
+
+        if (lados < 3) {
+            alert("Não é um polígono! ");
+        } else if(lados > 5) {
+            alert("Polígono não identificado! ");
+        } else {
+            var comprimento = parseFloat(prompt("Digite a medida do lado: "));
+
+        if (lados == 3) {
+            alert("O polígono é um triângulo, e seu perímetro é de: " + comprimento*3);
+        };
+        if (lados == 4) {
+            alert("O polígono é um quadrado, e sua área é de: " + comprimento**2);
+        };
+        if (lados == 5) {
+            alert("O polígono é um pentágono!")
+        };
+        }
+        
+    </script>
+</body>
+</html>

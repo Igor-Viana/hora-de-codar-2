@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Calculadora</title>
+</head>
+<body>
+    <script>
+        var resultado = 0
+        while(true) {
+            var num1 = parseFloat(prompt("Digite um número: "));
+            var num2 = parseFloat(prompt("Digite o segundo: "));
+            var operacao = parseInt(prompt("Digite um número referente à operação: \n 1.Adição \n 2.Subtração \n 3.Divisão \n 4.Subtração" ));
+            if (operacao > 0 && operacao < 5) {
+                if (operacao == 1) {
+                    resultado = num1+num2
+                }
+            };
+            if (operacao < 0 || operacao > 5) {
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

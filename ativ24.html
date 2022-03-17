@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um zoológico muito louco!</title>
+</head>
+<body>
+    <script>
+        // def menor valor
+
+        var javaliVelho = 0;
+        var javaliNovo = 1000;
+        var girafaVelha = 0;
+        var girafaNova = 1000;
+
+        //laço javali
+
+        for (let contador = 0; contador < 2; contador++) {
+            var idadeJavali = parseInt(prompt("Digite a idade do javali: "));
+            if (idadeJavali > javaliVelho) {
+                javaliVelho = idadeJavali;
+            };
+            if (idadeJavali < javaliVelho || idadeJavali < javaliNovo) {
+                javaliNovo = idadeJavali;
+            };
+        //laço girafa
+
+            var idadeGirafa = parseInt(prompt("Digite a idade da girafa: "));
+            if (idadeGirafa > girafaVelha) {
+                girafaVelha = idadeGirafa;
+            };
+            if (idadeGirafa < girafaNova) {
+                girafaNova = idadeGirafa;
+            };
+        };
+        //soma e produto
+
+        var soma = (javaliVelho+girafaNova);
+        var produto = (javaliNovo*girafaVelha); 
+
+        alert("A soma das idades do javali mais velho com a girafa mais nova é de: " + soma);
+        alert("O produto das idades do javali mais novo com o da girafa mais velha é: " + produto);
+    </script>
+</body>
+</html>
