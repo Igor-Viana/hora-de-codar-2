@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Semestral</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("Fale sua nota de Português do 1º bimestre do semestre: "));
+        var nota2 = parseFloat(prompt("Fale sua nota de Português do 2º bimestre do semestre: "));
+        var nota3 = parseFloat(prompt("Fale sua nota de Matemática do 1º bimestre do semestre: "));
+        var nota4 = parseFloat(prompt("Fale sua nota de Matemática do 2º bimestre do semestre: "));
+        var media = (nota1 + nota2 + nota3 + nota4)/4
+        if (media > 6) {
+            alert("PARABENS! sua média foi de " + media + " e você foi aprovado!");
+        };
+        if (media < 6) {
+            alert("Que pena! sua média foi de " + media + " e você foi reprovado");
+        };
+    </script>
+</body>
+</html>

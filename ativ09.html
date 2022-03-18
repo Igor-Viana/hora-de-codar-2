@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Digite 6 números, se eles forem menores que 72, então eles serão somados.");
+        var soma = 0;
+        for (let cont = 0; cont < 6; cont++) {
+            var input = parseInt(prompt("Digite um número: "));
+            if (input < 72) {
+                soma = soma + input
+            };
+            
+        };
+
+        alert("A soma dos 6 números digitados, menores que 72, é: " + soma);
+    </script>
+</body>
+</html>

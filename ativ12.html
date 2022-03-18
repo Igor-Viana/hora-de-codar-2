@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combustível para a mercedes</title>
+</head>
+<body>
+    <script>
+        var comprimentoPista = parseFloat(prompt("Especifique o comprimento da pista (em metros): "));
+        var voltasTotal = parseInt(prompt("Fale agora quantas voltas serão executadas nessa pista: "));
+        var reabastecimentos = parseInt(prompt("Quantos reabastecimentos serão realizados no decorrer da corrida?"));
+        var consumo = parseFloat(prompt("Qual é o consumo do veículo em Km/L? "));
+
+        //litros minimos para chegar ate o proximo reabastecimento
+        var distanciaReabastecimento = ((comprimentoPista*voltasTotal)/1000)/reabastecimentos
+        var litrosMin = distanciaReabastecimento/consumo
+
+        alert("A quantidade mínima de combustível para chegar até o próximo ponto de reabastecimento é de: " + litrosMin)
+    </script>
+</body>
+</html>

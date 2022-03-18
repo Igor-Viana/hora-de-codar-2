@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de taxi</title>
+</head>
+<body>
+    <script>
+        var combustivel = 2.90;
+        var odometroInicial = parseInt(prompt("Informe a marcação do odômetro (Km) no início do dia: "));
+        var odometroFinal = parseInt(prompt("Informe a marcação do odômetro no final do dia: "));
+        var combustivelGasto = parseInt(prompt("Quantos litros de combustível foram gastos no dia? "));
+        var valorRecebido = parseFloat(prompt("Informe o valor total recebido pelo motorista: "));
+
+        //calculo media consumo km/L
+        var distanciaPercorrida = odometroFinal - odometroInicial;
+        var consumo = (distanciaPercorrida / combustivelGasto);
+        //Lucro líquido no dia
+        var lucro = valorRecebido - (combustivelGasto*combustivel);
+
+        alert("O consumo médio de hoje foi: " + consumo + "Km/L");
+        alert("O lucro de hoje foi: R$" + lucro)
+    </script>
+</body>
+</html>

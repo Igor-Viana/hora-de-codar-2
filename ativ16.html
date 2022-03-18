@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var qtdComprada = parseInt(prompt("Quantas maçãs vai querer? lembre-se que hoje tem promoção! R$0,25 a unidade se forem compradas mais que uma dúzia. "));
+        var valor = 0.0
+        if (qtdComprada >= 12) {
+            valor = qtdComprada*0.25;
+        } else {
+            valor = qtdComprada*0.30
+        }
+
+        alert("Obrigado pela consideração! O valor total ficou: R$ " + valor);
+    </script>
+</body>
+</html>

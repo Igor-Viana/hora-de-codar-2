@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pode Votar?</title>
+</head>
+<body>
+    <script>
+        var anoAniversario = parseInt(prompt("Em qual ano você nasceu? "));
+        if (anoAniversario > 2005) {
+            alert("Que pena! Mas você ainda não pode votar!");
+        };
+        if (anoAniversario == 2005) {
+            alert("Aguarde mais 1 ano e já poderá votar!");
+        };
+        if (anoAniversario < 2005) {
+            alert("você já pode (obrigatoriamente) votar! :) ");
+        };
+    </script>
+</body>
+</html>
